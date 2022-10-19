@@ -1,0 +1,183 @@
+/*Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a; */
+
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    background-color: #EAC926;
+} 
+header div.top-header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+header div.top-header .logo {
+    width: 50%;
+}
+
+header div.top-header .form {
+    width: 50%;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+.contenedor-padre {
+    position: relative;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article {
+    margin: 10px;
+}
+
+article div.contenedor-padre {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.last-visited img {
+        object-fit: cover;
+        width:100%;
+        height:100%;
+}
+
+.product-detail {
+    display: flex;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+/*
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+p {
+    font-size: 12px;
+}
+h2 {
+    font-size: 24px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+div.precios {
+    font-size: 18px;
+    flex-grow: 0.3;
+    width: 30%;
+}
+div.descuentos {
+    font-size: 16px;
+    flex-grow: 0.7;
+    width: 70%;
+}
+div.descripcion {
+    font-size: 16px;
+}
+
+footer {
+    background-color: white;
+}
+
+.pie-de-pagina {
+    text-align: center;
+}
+
+.pie-de-pagina i {
+    font-size: 2em;
+    margin: 10px;
+}
+
+/*main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}*/
+
+@media (min-width: 391px) {
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+    }
+
+    .products article {
+        width: 45%;
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+               
+}
+/*tablet*/
+
+@media (min-width: 769px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .products article {
+        width: 20%;
+    }
+}
